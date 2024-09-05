@@ -1,0 +1,62 @@
+/* Make the entire screen have a light lavender background */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #E6E6FA; /* Light lavender */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full screen height */
+    font-family: Arial, sans-serif;
+}
+
+/* Center the quiz container */
+#quiz-container {
+    text-align: center;
+    background-color: #E6E6FA;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Adjust this if necessary */
+}
+
+/* Style for the question text */
+#question {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Style for the image */
+#question-image {
+    width: 100%;
+    max-width: 250px; /* This keeps the image small and square */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Style for the buttons */
+.option-btn {
+    display: block;
+    margin: 10px auto;
+    padding: 9px;
+    font-size: 18px;
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.option-btn:hover {
+    background-color: #45a049;
+}
+@media (max-width: 600px) {
+    #quiz-container {
+        width: 100%; /* Expand the quiz container to full width on small screens */
+    }
+    .option-btn {
+        font-size: 16px; /* Make the buttons slightly smaller */
+    }
+}
